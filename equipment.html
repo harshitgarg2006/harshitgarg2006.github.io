@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Equipment</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial;
+        }
+
+        .box {
+            text-align: center;
+        }
+
+        input, select, button {
+            padding: 10px;
+            margin: 8px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+    <h2>What equipment do you want?</h2>
+
+    <form action="/check" method="POST">
+        <select name="equipment_id">
+            <option value="1">Extension Cord</option>
+            <option value="2">Thermometer</option>
+        </select>
+
+        <br>
+
+        <button type="submit">Search</button>
+    </form>
+</div>
+
+</body>
+</html>

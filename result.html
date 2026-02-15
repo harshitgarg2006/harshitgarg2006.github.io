@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>{{ message }}</h2>
+
+{% if can_book %}
+<form action="/book" method="POST">
+    <input type="hidden" name="equipment_id" value="{{ equipment_id }}">
+    <button type="submit">Book</button>
+</form>
+{% endif %}
+
+<br>
+<a href="/equipment_page">Check another equipment</a>
+
+</body>
+</html>
